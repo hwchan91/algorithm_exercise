@@ -37,10 +37,7 @@ class BinaryTree
     arr.each {|item| insert(item, @root)}
     @root
   end
-end
 
-
-class BinaryTree
   def breadth_first_search(value, node = @root, queue = [])
     if node.nil?
       return nil
@@ -52,9 +49,7 @@ class BinaryTree
       breadth_first_search(value, queue.shift, queue)
     end
   end
-end
 
-class BinaryTree
   def depth_first_search(value, node = @root, stack = [])
     stack << node
     while !stack.empty?
@@ -69,9 +64,7 @@ class BinaryTree
     end
     #return nil if stack.empty?
   end
-end
 
-class BinaryTree
   def dfs_rec(value, node = @root)
     if node.value == value
       return node

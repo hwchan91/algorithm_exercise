@@ -80,7 +80,19 @@ class Board
   end
 end
 
+def print_board
+  puts "                   Sample Board"
+  puts "      0    1    2    3    4    5    6    7"
+  puts "    +----+----+----+----+----+----+----+----+"
+  8.times do |i|
+    puts "#{i}   |    |    |    |    |    |    |    |    |  #{i}"
+    puts "    +----+----+----+----+----+----+----+----+"
+  end
+  puts "      0    1    2    3    4    5    6    7"
+end
+
 a = Board.new
+print_board
 a.knight_move([0,0],[2,3])
 puts "\n\n"
 a.knight_move([1,6],[2,3])
